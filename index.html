@@ -1,0 +1,399 @@
+<html>
+	<head>
+		<title>Split Landing</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" rel="stylesheet">
+		<style>
+			body {
+				font-family: "PT Sans Narrow", sans-serif;
+			}
+
+			.columns {
+			    border-bottom: 1px solid #c1c1c1;
+				padding-bottom: .75em;
+				padding-top: .75em;
+				margin-bottom: .75em;
+				min-height: 100vh;
+			}
+			.columns .column > header {
+				font-family: 'PT Sans', sans-serif;
+				padding: 1em;
+				text-align: center;
+			}
+			.columns .column {
+				border: 1px solid #333;
+			}
+			.copy {
+				padding: inherit;
+			}
+			.intro .column.right-side {
+				background: url('img/intro/intro.jpg') center center/cover;
+			}
+			.portfolio .left-side {
+				background: url('img/portfolio/portfolio.jpg') center center/cover;
+			}
+			.team .column.right-side {
+				background: url('img/team/team.jpg') center center/cover;
+			}
+			.timeline .column.left-side {
+				background: url('img/timeline/timeline.jpg') center center/cover;
+			}
+			.contact .right-side {
+				background: url('img/contact/contact.jpg') center center/cover;
+			}
+			.port-container {
+				display: flex;
+				flex-flow: row wrap;
+			}
+			.port-container > div {
+				max-width: 50%;
+			}
+			.port-item {
+				padding: .5em;
+			}
+			.port-item > figure > figcaption {
+				font-size: 1.28em;
+				text-align: center;
+			}
+			.team-container {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: center;
+				align-items: center;
+			}
+			.team-mem {
+				margin: 2em;
+			}
+			.team-container > .team-mem {
+				max-width: 33%;
+			}
+			.team-mem > figure > img {
+				border-radius: 100%;
+				border: 6px solid skyblue;
+			}
+			.team-mem > figure > figcaption {
+				font-size: 1.75em;
+				text-align: center;
+			}
+			/* Divider styles */
+			.divider {
+				max-width: 75%;
+				display: flex;
+				flex-direction: row;
+				padding: .35em;
+				justify-content: center;
+				align-items: center;
+				margin: auto auto .5em auto;
+			}
+			.divider > .left,
+			.divider > .right {
+				width: 100%;
+			}
+			.divider > .left > hr,
+			.divider > .right > hr {
+				background-color: #c9c9c9;
+				margin: .05em 0 .05em 0;
+			}
+			.divider > .center {
+				align-self: center;
+				margin: 0 1em 0 1em;
+			}
+			.divider .left,
+			.divider .right {
+				display: flex;
+				flex-direction: column;
+				justify-content: inherit;
+			}
+			.divider .center {
+				align-self: center;
+				margin: 0 1em 0 1em;
+			}
+			/* Tree styles */
+			.tree-container > .leaf {
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: space-evenly;
+				text-align: right;
+				margin: auto auto 1.5em auto;
+			}
+			.tree-container > .leaf:nth-of-type(2) {
+				text-align: left;
+				flex-direction: row-reverse;
+			}
+			.leaf > header {
+				max-width: 50%;
+			}
+			.leaf > figure {
+				max-width: 30%
+			}
+			.leaf > figure > img {
+				border-radius: 100%;
+				border: 4px solid skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section class="section">
+				<div class="container">
+					<div class="intro columns">
+						<div class="column left-side">
+							<header>
+								<h1 class="title is-1">This is the Intro header</h1>
+								<h3 class="subtitle">and this is it's subtitle.</h3>
+							</header>
+							<div class="divider">
+								<div class="left">
+									<hr>
+								</div>
+								<div class="center">
+									<i class="fas fa-chevron-down"></i>
+								</div>
+								<div class="right">
+									<hr>
+								</div>
+							</div>
+							<div class="copy content is-medium">
+								<p>In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum, ut efficitur dolor. Nam id ipsum odio. Morbi porta lectus nec odio imperdiet egestas. Nam vel nunc non nisl elementum faucibus. Praesent dapibus non ante vitae elementum. Pellentesque tincidunt augue nibh, pellentesque malesuada metus convallis in. Ut ex magna, fringilla sed tincidunt non, dapibus nec sapien. Nunc ac leo sem. Morbi dictum sapien elementum, dictum purus sed, lobortis ante.</p>
+							
+								<p>Morbi commodo ipsum ac mauris bibendum mattis. Cras ultricies lorem nunc, a sollicitudin tellus pellentesque vel. Nullam non tincidunt ex, et vestibulum justo. Sed a faucibus augue. Phasellus eget nibh ex. Nulla placerat finibus lacinia. Suspendisse tortor nisi, sodales at ligula et, bibendum accumsan felis. Proin et lacinia justo.</p>
+							</div>
+							<div class="buttons is-centered">
+								<div class="button is-info is-large">
+									Click Me
+								</div>
+							</div>
+						</div>
+						<div class="column right-side"></div>
+					</div>
+					<div class="portfolio columns">
+						<div class="left-side column"></div>
+						<div class="right-side column">
+							<header>
+								<h1 class="title is-1">This is the Portfolio header</h1>
+								<h3 class="subtitle">and this is it's subtitle.</h3>
+							</header>
+							<div class="divider">
+								<div class="left">
+									<hr>
+								</div>
+								<div class="center">
+									<i class="fas fa-chevron-down"></i>
+								</div>
+								<div class="right">
+									<hr>
+								</div>
+							</div>
+							<div class="port-container">
+								<div class="port-item">
+									<figure class="image port-thumb">
+										<img src="img/portfolio/items/1.jpg">
+										<figcaption>Item 1</figcaption>
+									</figure>
+								</div>
+								<div class="port-item">
+									<figure class="image port-img">
+										<img src="img/portfolio/items/2.jpg">
+										<figcaption>Item 2</figcaption>
+									</figure>
+								</div>
+								<div class="port-item">
+									<figure class="image port-img">
+										<img src="img/portfolio/items/3.jpg">
+										<figcaption>Item 3</figcaption>
+									</figure>
+								</div>
+								<div class="port-item">
+									<figure class="image port-img">
+										<img src="img/portfolio/items/4.jpg">
+										<figcaption>Item 4</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Team -->
+					<div class="team columns">
+						<div class="column left-side">
+							<header>
+								<h1 class="title is-1">This is the Team header</h1>
+								<h3 class="subtitle">and this is it's subtitle.</h3>
+							</header>
+							<div class="divider">
+								<div class="left">
+									<hr>
+								</div>
+								<div class="center">
+									<i class="fas fa-chevron-down"></i>
+								</div>
+								<div class="right">
+									<hr>
+								</div>
+							</div>
+							<div class="team-container">
+								<div class="team-mem">
+									<figure class="image">
+										<img src="img/team/members/1.jpg">
+										<figcaption>
+											Jane Doeeeeee
+											<div class="social-list">
+												<i class="fab fa-twitter"></i>
+												<i class="fab fa-linkedin"></i>
+												<i class="fab fa-facebook"></i>
+											</div>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="team-mem">
+									<figure class="image">
+										<img src="img/team/members/2.jpg">
+										<figcaption>
+											John Doeeeeee
+											<div class="social-list">
+												<i class="fab fa-twitter"></i>
+												<i class="fab fa-linkedin"></i>
+												<i class="fab fa-facebook"></i>
+											</div>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="team-mem">
+									<figure class="image">
+										<img src="img/team/members/3.jpg">
+										<figcaption>
+											John Doeeeeee
+											<div class="social-list">
+												<i class="fab fa-twitter"></i>
+												<i class="fab fa-linkedin"></i>
+												<i class="fab fa-facebook"></i>
+											</div>
+										</figcaption>
+									</figure>
+								</div>
+								<div class="team-mem">
+									<figure class="image">
+										<img src="img/team/members/4.jpg">
+										<figcaption>
+											Jane Doeeeeee
+											<div class="social-list">
+												<i class="fab fa-twitter"></i>
+												<i class="fab fa-linkedin"></i>
+												<i class="fab fa-facebook"></i>
+											</div>
+										</figcaption>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="column right-side"></div>
+					</div>
+					<!-- Timeline -->
+					<div class="timeline columns">
+						<div class="left-side column"></div>
+						<div class="right-side column">
+							<div class="tree-container">
+								<div class="leaf">
+									<header>
+										<h3 class="title">Hello World!</h3>
+										<h3 class="subtitle">In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum.</h3>
+										<span>In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum. In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum. In quis ante quis velit scelerisque bibendum in eu nibh!</span>
+									</header>
+									<figure class="image">
+										<img src="img/team/members/1.jpg">
+									</figure>
+								</div>
+								<div class="leaf">
+									<header>
+										<h3 class="title">Other Shit Happened</h3>
+										<h3 class="subtitle">In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum.</h3>
+										<span>In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum. In quis ante quis velit scelerisque bibendum in eu nibh. Nulla non efficitur ipsum. In quis ante quis velit scelerisque bibendum in eu nibh!</span>
+									</header>
+									<figure class="image">
+										<img src="img/team/members/3.jpg">
+									</figure>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Contact -->
+					<div class="contact columns">
+						<div class="left-side column">
+							<header>
+								<h1 class="title is-1">Contact Us</h1>
+								<h3 class="subtitle">Fill out the form below and we'll reach back as soon as we can.</h3>
+								<div class="divider">
+									<div class="left">
+										<hr>
+									</div>
+									<div class="center">
+										<i class="fas fa-chevron-down"></i>
+									</div>
+									<div class="right">
+										<hr>
+									</div>
+								</div>
+							</header>
+							<div class="contact-form">
+								<div class="email field">
+									<label class="label is-large">Email</label>
+									<div class="control has-icons-left has-icons-right">
+										<input class="input is-large is-danger" type="email" placeholder="Email input">
+										<span class="icon is-small is-left">
+											<i class="fas fa-envelope"></i>
+										</span>
+										<span class="icon is-small is-right">
+											<i class="fas fa-exclamation-triangle"></i>
+										</span>
+									</div>
+									<p class="email-err help is-danger">This email is invalid</p>
+								</div>
+								<div class="name field">
+									<label class="label is-large">Name</label>
+									<div class="control has-icons-left has-icons-right">
+										<input class="input is-large is-danger" type="text" placeholder="Name input">
+										<span class="icon is-small is-left">
+											<i class="fas fa-user"></i>
+										</span>
+										<span class="icon is-small is-right">
+											<i class="fas fa-exclamation-triangle"></i>
+										</span>
+									</div>
+									<p class="phone-err help is-danger">Please enter your name</p>
+								</div>
+								<div class="phone field">
+									<label class="label is-large">Phone</label>
+									<div class="control has-icons-left has-icons-right">
+										<input class="input is-large is-danger" type="phone">
+										<span class="icon is-small is-left">
+											<i class="fas fa-user"></i>
+										</span>
+										<span class="icon is-small is-right">
+											<i class="fas fa-exclamation-triangle"></i>
+										</span>
+									</div>
+									<p class="phone-err help is-danger">Please enter your phone number</p>
+								</div>
+								<div class="message field">
+									<label class="label is-large">Message</label>
+									<div class="control has-icons-left has-icons-right">
+										<textarea class="textarea" placeholder="e.g. Hello world"></textarea>
+										<span class="icon is-small is-left">
+											<i class="fas fa-envelope"></i>
+										</span>
+										<span class="icon is-small is-right">
+											<i class="fas fa-exclamation-triangle"></i>
+										</span>
+									</div>
+									<p class="phone-err help is-danger">Please enter a message</p>
+								</div>
+							</div>
+						</div>
+						<div class="right-side column"></div>
+					</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
