@@ -155,3 +155,12 @@ footer {
 .foot-links > ul > li {
     margin: 0 1em 0 1em;
 }
+@media (max-width: 768px) {
+	.intro > .column.right-side,
+	.portfolio > .column.left-side,
+	.team > .column.right-side,
+	.timeline > .column.left-side,
+	.contact > .column.right-side	{
+		display: none;
+	}
+}
